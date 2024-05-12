@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+
+        <h1>wather app</h1>
+
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>your weather</p>
+            <p class="tab" data-searchWeather>search weather</p>
+        </div>
+
+        <div class="weather-container">
+            <!-- grant-ui -->
+            <div class="grant-location-container">
+                
+                <img src="./images/location.png" alt="" width="88" height="88"
+                loading="lazy">
+                <p> Grant location acess</p>
+                <p>allow acess to get weather infomation</p>
+                <button class="btn" data-generateAcessGrant>
+                    GRANT ACESS
+                </button>
+            </div>
+
+
+            <!-- search form -->
+            <form class="form-container" data-searchForm>
+                <input placeholder="search for city" data-SearchInput>
+                <button class="btn" type="submit">
+                    <img src="/images/search.png" alt=""
+                    height="20"
+                    width="20"
+                    loading="lazy">
+                </button>
+            </form>
+
+
+            <!-- loding scrren -->
+            <div class=" sub-container Loding-container">
+                <img src="/images/loading.gif" alt=""
+                width="150"
+                height="150">
+                <p>loding</p>
+
+            </div>
+
+
+         
+            <div class="erro">
+                <img src="images/5224474-removebg-preview.png" alt=""
+                width="290px"
+                height="250px">
+                <p>INTERNET DISCONNECT</p>
+            </div>
+   <!-- weather ui show weather info -->
+
+            <div class="sub-container user-info-container">
+                <!-- city name anf flage -->
+                <div class="name">
+                    <p dataCityName></p>
+                    <img  data-country1con>
+                </div>
+                <!-- weather des -->
+                <p data-Desc></p>
+                <!-- icn -->
+                <img weatherIcn>
+                <!-- wtemp -->
+                <p dataTemp></p>
+
+               <div class="parameter-container">
+                
+                <!-- 3 card -->
+                <div class="parameter">
+                    <img src="/images/wind.png" alt="">
+                    <p>windspeed</p>
+                    <p dataWindspeed></p>
+                </div>
+                <!-- card-2 -->
+                <div class="parameter">
+                    <img src="/images/humidity.png" alt="">
+                    <p>humidity</p>
+                    <p dataHumitdiy></p>
+                </div>
+                <!-- card-1 -->
+                <div class="parameter">
+                    <img src="./images/cloud.png" alt="">
+                    <p>cloud</p>
+                    <p datacloudness></p>
+                </div>
+                
+
+               </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+  <script src="scprit.js"></script>
+</body>
+</html>

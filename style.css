@@ -1,0 +1,260 @@
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+:root {
+    --colorDark1: #112d4e;
+    --colorDark2: #3f72af;
+    --colorLight1: #dbe2ef;
+    --colorLight2: #f9f7f7;
+
+}
+
+.wrapper{
+   
+  
+   width:100vw;
+  height: 100vh;;
+    color: white;
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+  .tab-container{
+    padding: 1rem;
+    width: 90%;
+    max-width: 550px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+   letter-spacing: 1px;
+   font-weight: 900;
+   font-size: 12px;
+   text-transform: uppercase;
+    
+  }
+  
+.tab.current-Tab{
+    background-color:rgba(219,226,239,0.5);
+    padding: 0.9rem;
+    border-radius: 40px;
+}
+
+
+.weather-container{
+ text-align: center;
+ 
+
+/* //it is use to set mtop or bottom */
+
+}
+
+.grant-location-container{
+     display:none;
+} 
+.grant-location-container.active{
+    display:flex; 
+     flex-direction: column;
+    align-items: center;
+  
+    row-gap:0.5rem; }  
+ 
+.grant-location-container img{
+    margin-bottom: 2rem;
+
+} 
+   .sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    row-gap:0.5rem; }  
+  
+
+
+.grant-location-container p:first-of-type{
+  
+    font-weight: 900;
+    font-size:1.2rem;
+    text-align: center;
+}
+.grant-location-container p:last-of-type{
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    
+    /* all: unset; */
+    /* use to remove all deafult vlue of button */
+    width: 8rem;
+    background-color:var(--colorLight1);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.Loding-container{
+     display: none; 
+}
+.Loding-container.active{
+    display: flex;
+}
+.Loding-container p{
+    text-transform: uppercase;
+
+}
+
+
+
+.user-info-container{
+    display: none;
+}
+.user-info-container.active{
+    display: flex;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.name:nth-child(1){
+    font-size: 2rem;
+
+
+}.user-info-container p{
+    font-style: 1.5rem;
+    font-weight: 200;
+}
+.user-info-container img{
+    width: 90px;
+    height: 90px;
+}
+.name img{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.user-info-container p[dataTemp]{
+    font-size:2rem;
+    font-weight: 700;
+
+}
+.parameter{
+    background-color: rgba(219,226,239,0.5);
+    width: 30%;
+    max-width: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0;
+    padding: 1rem;
+   
+    
+}
+.parameter img{
+    height: 50px;
+    width: 50px;
+}
+.parameter p:first-of-type{
+    font-size:13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.parameter p :last-of-type{
+    font-weight: 300;
+}
+.parameter-container{
+    display: flex;
+    gap: 10px 20px;
+    align-items: center;
+    justify-content: center;
+  
+   
+}
+
+.form-container{
+    margin: 0 auto;
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+.form-container.active{
+    display: flex;
+
+}
+.form-container input::placeholder{
+    color: black
+}
+.form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+
+    height: 40px;
+    padding: 0 15px;
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 10px;
+    margin-top: 1rem;
+  
+    margin-left: 1rem;
+}
+.form-container input:focus{
+    outline: 3px solid white;
+}
+
+.form-container button{
+   border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+.erro{
+    display:none;
+}
+.erro.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 900;
+   
+}
+
+   
+
